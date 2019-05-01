@@ -1,4 +1,4 @@
-# hard code a list like this
+ # hard code a list like this
 #list1 = [65,33,17,87,54,25,78]
 import random
 # or use googles idea like this
@@ -22,7 +22,7 @@ print("\n")
 class Die:
     def __init__(self, num_of_sides: int):
         self.num_of_sides = num_of_sides
-
+t
     def roll_die(self):
         return random.randint(1, self.num_of_sides)
         # print(spin)
