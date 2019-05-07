@@ -1,0 +1,47 @@
+header {
+    text-align: center
+}
+
+header h1 {
+    border: 3px dashed plum;
+}
+
+header img {
+    width: 250px;
+    height: 200px;
+}
+
+#wrapper { 
+    text-align: center;
+    background: cornsilk }
+
+#storeHours {
+    color: rgb(230, 18, 46);
+    text-align: end
+}
+
+#location{
+    color: aqua;
+    text-align: right
+}
+
+#desc{
+        font-size: 26px;
+        font-style: italic
+    }
+
+header a:link {
+    color: blue;
+}    
+
+header a:visited {
+    color: purple
+}
+
+header a:active {
+    color: yellow
+}
+
+header a:hover {
+    font-size: 125%;
+}
