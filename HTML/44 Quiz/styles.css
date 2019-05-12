@@ -1,0 +1,24 @@
+div {
+    height:  100px;
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    margin: 4px;
+    padding: 4px;
+}
+
+
+p {
+    clear: left;
+}
+html {
+    max-width: 800px;
+    margin: auto;
+    background-color: black;
+}
+body {
+    background-color: white
+}
