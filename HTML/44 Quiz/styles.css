@@ -15,10 +15,10 @@ p {
     clear: left;
 }
 html {
-    max-width: 670px;
-    margin: auto;
     background-color: black;
 }
 body {
-    background-color: white
+    background-color: white;
+     max-width: 670px;
+     margin: auto;
 }
