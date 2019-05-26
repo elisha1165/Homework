@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FeedBack</title>
+    <link href='ResturantStyles.css' rel='stylesheet'>
+    <link href="../42/Resturant Pics/icon.jpeg" rel='icon'>
+    <style>
+        #all,
+        #TY {
+            text-align: center;
+            padding: 2.5em;
+            font-size: 32px;
+        }
+
+        input:not([type="radio"]):not([type="submit"]),
+        textarea {
+            display: block;
+            margin: 15px;
+            width: 65%;
+        }
+    </style>
+</head>
+
+<body>
+    <Header>
+        <h1>
+            Berni's TakeOut
+        </h1>
+        <h2 id=food>
+            Where you'll get delicious food fast and easy!
+        </h2>
+        <img src="../42/Resturant Pics/sign.jpeg" alt="We Are Open">
+        <br>
+        <a href="index.html">Home Page</a>
+        <a href="Menu.html">
+            Our Menu
+        </a>
+        <a href="FeedBack.html">Feedback</a>
+        <hr>
+    </Header>
+    <p id=all>Please fill out ALL areas to submit your feedback.</p>
+    <form action="submitFeedback.php" method='post'>
+        <label for='fullName'>Full Name:</label><input name='fullName' id='fullName'
+            placeholder='Please Enter Your Full Name' required minlength="7">
+        <label for='email'>Email:</label><input type='email' name='email' id='email'
+            placeholder='Please Enter Your Email ' required>
+        <label for='dateVisited'>Date Visited:</label><input type='date' name='dateVisited' id='dateVisited' required>
+        <!-- label for='rating'>Rating:</label><input type='range' name='rating' id='rating' min='0' max='4' required -->
+        <label><input id="rating-1" name="rating" type="radio" value="1" />1 Star</label> <label><input id="rating-2"
+                name="rating" type="radio" value="2" />2 Stars</label> <label><input id="rating-3" name="rating"
+                type="radio" value="3" />3 Stars</label> <label><input id="rating-4" name="rating" type="radio"
+                value="4" required />4 Stars </label>
+        <br><br>
+        <label for='comments'>Comments:</label><textarea placeholder='Please write your comment here'
+            required></textarea>
+        <input type="submit">
+    </form>
+    <p id=TY>Thaank you for taking time to leave us feedback. It will help us improve our customer experience!</p>
+</body>
+
+</html>
