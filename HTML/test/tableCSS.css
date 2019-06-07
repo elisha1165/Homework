@@ -1,0 +1,45 @@
+.total {
+    color: red;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    text-align:center;
+}
+td{
+    text-align: right;
+}
+#total{
+    text-align: right;
+}
+#table-scroll{
+    overflow-x:auto;
+}
+
+tr:nth-child(even)  {
+    background: lightblue;
+}
+/* for some reason it didnt work when I tried 
+    tr:nth-child(even) :not(tr:last-child) {
+    background: lightblue;
+}
+*/
+tr:last-child{
+    background: none;
+}
+tr:hover{
+    background-color: blue;
+}
+#profits{
+    text-align: center;
+}

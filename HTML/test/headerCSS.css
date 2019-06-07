@@ -1,0 +1,22 @@
+ header {
+            background-color: gainsboro;
+            padding: 0px;
+            padding-top: 28px;
+            padding-bottom: 18px;
+            text-align: center;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        h1 {
+            margin: 5px;
+            padding-top: 40px;
+        }
+        h2 {
+            margin: 5px;
+            padding-bottom: 18px;
+        }
+
+        #PCS {
+            font-style: italic;
+        }

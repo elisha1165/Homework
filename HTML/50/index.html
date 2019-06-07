@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-auto-flow: column;
+            grid-gap: 3px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+        }
+
+        div {
+            background-color: aqua;
+            border: 5px;
+            margin: 1px;
+            height: 126px;
+            width: 126px;
+
+        }
+        #twoCell{
+            grid-column-start: 1 span 3;
+            width: 252px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id ="twoCell"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

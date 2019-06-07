@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1000px){
+    #sameLine{
+        display: inline-block;
+        margin:auto;
+    }
+
+    #form [type="submit"] {
+        display: inline-block;
+        margin:auto;
+        margin-top:15px;
+    }
+    #wrapper {
+        display: table;
+        margin-top:35px;
+        margin-bottom:35px;
+     }
+
+     #comp, #choir, #candy {
+         display: table-cell;
+     }
+     #choir{
+         padding-right: 15px;
+         padding-left:15px;
+         border-right: 1px solid black;
+         border-left: 1px solid black;
+     }
+     #comp, #candy{
+         padding-right:15px;
+         padding-left:15px;
+         /*Really comp needs only padding-right and candy only padding-left so the border wont be up against text
+         but it makes it more uniform for the pis to have the same*/
+     }
+     
+    
+}

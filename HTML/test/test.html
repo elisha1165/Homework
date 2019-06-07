@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESTUFF</title>
+    <link href='allCSS.css' rel='stylesheet'>
+    <link href='navCSS.css' rel='stylesheet'>
+    <link href='headerCSS.css' rel='stylesheet'>
+    <link href='formCSS.css' rel='stylesheet'>
+    <link href='tableCSS.css' rel='stylesheet'>
+    <link href='wideScreen.css' rel='stylesheet'>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id='first'><a href="#products">Product</a></li>
+            <li><a href="#form">Sign Up</a></li>
+            <li><a href="#financials">Financials</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+
+        </ul>
+    </nav>
+    <header>
+        <h1 class='capital'>
+            estuff
+        </h1>
+        <h2>
+            A <span id="PCS">PCS</span> Company
+        </h2>
+    </header>
+
+    <h3 id='products'>Products</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur sequi nesciunt? Eligendi, architecto
+        delectus ducimus velit dicta aspernatur culpa, ut voluptas ipsam expedita obcaecati vitae eaque? Placeat eum
+        ullam odit natus!
+    </p>
+    <div id='wrapper'>
+        <div id='comp'>
+            <h3 class="theThree">Computers</h3>
+            <img src="images/macworld.jpg" alt="MacWorld">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, aperiam consequuntur architecto
+                voluptatem,
+                voluptates tempora quis nesciunt dignissimos maxime molestias quasi ipsam error! Expedita quo dolor
+                cupiditate.
+            </p>
+        </div>
+
+
+
+        <div id='choir'>
+            <h3 class="theThree">Choirs</h3>
+            <video src='images/El Hanaar Hazeh.mp4' controls preload="metadata" poster='images/shira.png'></video>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, aperiam consequuntur architecto
+                voluptatem,
+                voluptates tempora quis nesciunt dignissimos maxime molestias quasi ipsam error! Expedita quo dolor
+                cupiditate.
+            </p>
+        </div>
+
+
+        <div id='candy'>
+            <h3 class="theThree">Candy</h3>
+            <img src="images/candy.png" alt="CandyPic">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, aperiam consequuntur architecto
+                voluptatem,
+                voluptates tempora quis nesciunt dignissimos maxime molestias quasi ipsam error! Expedita quo dolor
+                cupiditate.
+            </p>
+        </div>
+    </div>
+
+    <div id='form'>
+        <h3 id='SMU'>Sign Me Up!</h3>
+        <form action="SignMeUp.php" method='post'>
+            <div id='sameLine'> <label for='Name'>Name:</label><input name='Name' id='Name' placeholder='Your Name'
+                    required minlength="7"></div>
+            <div id='sameLine'><label for='email'>Email:</label><input type='email' name='email' id='email'
+                    placeholder='Your Email ' required></div>
+            <input type="submit" value='Sign Me Up!'>
+    </div>
+
+    <h3 id='financials'>Financials</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae dolorem totam culpa odit? Dolorem
+        suscipit nisi eligendi officia nobis quaerat repellat odit iusto velit numquam! Possimus officiis amet minima
+        aliquam recusandae.
+    </p>
+    <h3 id='profits'>Profits by Quarter</h3>
+    <div id='table-scroll'>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>1st Quarter profits</th>
+                <th>2nd Quarter profits</th>
+                <th>3rd Quarter profits</th>
+                <th>4th Quarter profits</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <th>2012</th>
+                <td>$1254564.32</td>
+                <td>$1154545.67</td>
+                <td>$1236566.98</td>
+                <td>$1368546.32</td>
+                <td class='total'>$5050934.29</td>
+            </tr>
+            <tr>
+                <th>2013</th>
+                <td>$1385475.87</td>
+                <td>$1485690.23</td>
+                <td>$1365568.54</td>
+                <td>$1545435.11</td>
+                <td class='total'>$5623344.75</td>
+            </tr>
+            <tr>
+                <th>2014</th>
+                <td>$1589878.76</td>
+                <td>$1698986.45</td>
+                <td>$1645456.32</td>
+                <td>$1789890.35</td>
+                <td class='total'>$6545657.88</td>
+            </tr>
+            <tr>
+                <th>2015</th>
+                <td>$1889776.22</td>
+                <td>$1854565.71</td>
+                <td>NA</td>
+                <td>NA</td>
+                <td class='total'>$3654654.93</td>
+            </tr>
+            <tr>
+                <th id='total' colspan='5'>Total</th>
+                <td class='total'>$20978798.85</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3 id='aboutUs'>About Us</h3>
+    <p id='last'>Start Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum facere temporibus esse nostrum
+        magni dignissimos voluptatum impedit distinctio iste similique doloremque exercitationem perspiciatis sit
+        quisquam eos
+        nulla fuga rem, sunt quo. A, necessitatibus minus. Reiciendis dolores ipsa sapiente quia quis error voluptates
+        reprehenderit! Exercitationem ipsum sunt id repellendus cum asperiores eius? Amet magni necessitatibus
+        asperiores, incidunt atque eos distinctio, architecto beatae quaerat, eligendi magnam recusandae fuga ratione
+        quidem nesciunt ipsum? Eum incidunt excepturi odit commodi officia laborum ab eveniet fuga quas, tempora eos
+        necessitatibus culpa sit corporis quam dolores repellat rem unde quis. Perferendis laborum natus optio
+        voluptatum aliquid
+        laudantiu nesciunt a nisi ad, at dolor ipsam, temporibus consectetur? Earum molestiae odit aspernatur, molestias
+        maiores
+        possimus voluptatibus culpa labore architecto tenetur pariatur saepe similique praesentium quasi asperiores
+        consequuntur quis voluptatem doloribus sunt? Nam praesentium id corporis recusandae, animi vitae nihil.
+        Dignissimos in nesciunt quidem eum officiis debitis suscipit iusto ullam A, necessitatibus minus. Reiciendis
+        dolores ipsa sapiente quia quis error voluptates
+        reprehenderit! Exercitationem ipsum sunt id repellendus cum asperiores eius? Amet magni necessitatibus
+        asperiores, incidunt atque eos distinctio, architecto beatae quaerat, eligendi magnam recusandae fuga ratione
+        quidem nesciunt ipsum? Eum incidunt excepturi odit commodi officia laborum ab eveniet fuga quas, tempora eos
+        necessitatibus culpa sit corporis quam dolores repellat rem unde quis. Perferendis laborum natus optio
+        voluptatum aliquid
+        laudantiu nesciunt a nisi ad, at dolor ipsam, temporibus consectetur? Earum molestiae odit aspernatur, molestias
+        maiores
+        possimus voluptatibus culpa labore architecto tenetur pariatur saepe similique praesentium quasi asperiores
+        consequuntur quis voluptatem doloribus sunt? Nam praesentium id corporis recusandae, animi vitae nihil.
+        Dignissimos in nesciunt quidem eum officiis debitis suscipit iusto ullam.
+        A, necessitatibus minus. Reiciendis dolores ipsa sapiente quia quis error voluptates
+        reprehenderit! Exercitationem ipsum sunt id repellendus cum asperiores eius? Amet magni necessitatibus
+        asperiores, incidunt atque eos distinctio, architecto beatae quaerat, eligendi magnam recusandae fuga ratione
+        quidem nesciunt ipsum? Eum incidunt excepturi odit commodi officia laborum ab eveniet fuga quas, tempora eos
+        necessitatibus culpa sit corporis quam dolores repellat rem unde quis. Perferendis laborum natus optio
+        voluptatum aliquid
+        laudantiu nesciunt a nisi ad, at dolor ipsam, temporibus consectetur? Earum molestiae odit aspernatur, molestias
+        maiores
+        possimus voluptatibus culpa labore architecto tenetur pariatur saepe similique praesentium quasi asperiores
+        consequuntur quis voluptatem doloribus sunt? Nam praesentium id corporis recusandae, animi vitae nihil.
+        Dignissimos in nesciunt quidem eum officiis debitis suscipit iusto ullam A, necessitatibus minus. Reiciendis
+        dolores ipsa sapiente quia quis error voluptates
+        reprehenderit! Exercitationem ipsum sunt id repellendus cum asperiores eius? Amet magni necessitatibus
+        asperiores, incidunt atque eos distinctio, architecto beatae quaerat, eligendi magnam recusandae fuga ratione
+        quidem nesciunt ipsum? Eum incidunt excepturi odit commodi officia laborum ab eveniet fuga quas, tempora eos
+        necessitatibus culpa sit corporis quam dolores repellat rem unde quis. Perferendis laborum natus optio
+        voluptatum aliquid
+        laudantiu nesciunt a nisi ad, at dolor ipsam, temporibus consectetur? Earum molestiae odit aspernatur, molestias
+        maiores
+        possimus voluptatibus culpa labore architecto tenetur pariatur saepe similique praesentium quasi asperiores
+        consequuntur quis voluptatem doloribus sunt? Nam praesentium id corporis recusandae, animi vitae nihil.
+        Dignissimos in nesciunt quidem eum officiis debitis suscipit iusto ullam.
+        End.</p>
+    <footer>
+        <div id='foot'>
+            &copy PCS 2019
+        </div>
+    </footer>
+
+</body>
+
+</html>
