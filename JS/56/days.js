@@ -7,6 +7,7 @@ var myApp = {
         }
     }
 };
+console.log(myApp.Utils.getDayName(2));
 
 var myApp = {
     Utils: {
@@ -25,9 +26,9 @@ var myApp = {
 
 
 
-console.log(myApp.Utils.getDayName(2));
-console.log(myApp.Utils.getDayNumber('Wednesday'));
 
+
+console.log(myApp.Utils.getDayNumber('Sunday'));
 
 
 
