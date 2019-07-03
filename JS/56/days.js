@@ -23,14 +23,9 @@ var myApp = {
 }
 }
     };
-
-
-
-
-
 console.log(myApp.Utils.getDayNumber('Sunday'));
-
-
+ 
+ 
 
 
 
