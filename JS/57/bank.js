@@ -13,3 +13,4 @@ function transaction(amount) {
 }
 transaction.call(account1, 25);
 transaction.call(account2, 50);
+transaction.call(account2, -75);
