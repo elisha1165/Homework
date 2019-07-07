@@ -18,7 +18,7 @@ console.log(arr2);
 
 /*
 // I wasn't sure if you wanted something like I did above, where mapFunc can only produce one result
-// I thought you may want something like below where I pass afunction into mapFund, and that function can do anything
+// I thought you may want something like below where I pass a function into mapFund, and that function can do anything
 // Only I kept getting an error that command is not a function, and wasn't sure how to fix that
 
 (function(){
