@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>changeColor</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            padding: 4px;
+        }
+
+        tr {
+            height: 15px;
+        }
+    </style>
 </head>
 
 <body>
     <p>Hey there. You will now be given the ability to start and stop the changing of this pages color.</p>
     <button id="button">Start</button>
+    <table id="myTable">
+        <caption>Colors</caption>
+    </table>
 
 
     <script src="changeColor.js"></script>
