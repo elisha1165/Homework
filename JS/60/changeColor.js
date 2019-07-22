@@ -18,55 +18,48 @@
             const row = table.insertRow();
             const time = row.insertCell();
             const date = new Date();
-            time.innerHTML = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+            time.innerHTML = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             row.onclick = () => {
                 get('button').innerHTML = 'Stop';
-                const colorArr = []; 
+                const colorArr = [];
                 let j = 0;
                 let t = 0;
-                    for (let i = 1; i < row.cells.length; i++) {
-                        colorArr[j++] = row.cells[i].innerHTML;
+                for (let i = 1; i < row.cells.length; i++) {
+                    colorArr[j++] = row.cells[i].innerHTML;
+                }
+                function theseColors() {
+                    if (t > row.cells.length) {
+                        t = 0;
                     }
-                    function theseColors(){
-                        if(t > row.cells.length){
-                            t = 0;
-                        }
-                        const color = colorArr[t++];
-                        document.body.style.backgroundColor = color; 
-                    }
-                    myItnerval = setInterval(theseColors, 500);
+                    const color = colorArr[t++];
+                    document.body.style.backgroundColor = color;
+                }
+                clearInterval(myItnerval);
+                myItnerval = setInterval(theseColors, 500);
             };
-    /*row.addEventListener('click', function () {
-        get('button').innerHTML = 'Stop';
-        while (get('button').innerHTML === 'Stop') {
-            for (var i = 1; i < row.cells.length; i++) {
-                document.body.style.backgroundColor = row.cells[i].innerHTML;
-            }
         }
-    });*/
-}
         else {
-    clearInterval(myItnerval);
-    get('button').innerHTML = 'Start';
-}
+            clearInterval(myItnerval);
+            get('button').innerHTML = 'Start';
+        }
     });
 
-function getColor() {
-    let letters = '0123456789ABCDEF';
-    let color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    function getColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     }
-    return color;
-}
 
-function changeColor() {
-    const color = getColor();
-    document.body.style.backgroundColor = color;
-    //colors.push(document.body.style.backgroundColor);
-    const lastRow = table.rows[table.rows.length - 1];
-    const addColors = lastRow.insertCell();
-    addColors.innerHTML = color;
-}
+    function changeColor() {
+        const color = getColor();
+        document.body.style.backgroundColor = color;
+        //colors.push(document.body.style.backgroundColor);
+        const lastRow = table.rows[table.rows.length - 1];
+        const addColors = lastRow.insertCell();
+        addColors.innerHTML = color;
+    }
 
 }());

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id='HW'>Hello World</h1>
+    <h1 id='da'></h1>
+    <script src="pcsTools.js"></script>
+    <script>
+        const HW = pcs('HW');
+        HW.changeColor(5000, 500);
+        HW.data('foo', 5);
+        console.log(HW.data('foo'));
+        /*HW.data('bar', '10');
+        console.log(HW.data('bar'));*/
+    </script>
+    <script>
+        const da = pcs('da');
+        da.data('goo', '15');
+        console.log(da.data('goo'));
+    </script>
+</body>
+
+</html>
