@@ -2,8 +2,8 @@
 $(document).ready(function () {
     'use strict';
 
-    const form = $("<form></form>");
-    form.append('<input type="text" name="name" id="name" placeholder="Whats your name?">')
+    const form = $("<form></form>")
+        .append('<input type="text" name="name" id="name" placeholder="Whats your name?">')
         .append('<input type="text" name="address" id="address" placeholder="Whats your address?">')
         .append('<input type="button" value = "Submit" id="submit">');
 
