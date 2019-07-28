@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('body').append(form);
 
     // not sure if you wanted to keep all submission, or show until clicked and then dissapear, but I got more practice
-    const table = $("<table><?table>");
+    const table = $("<table></table>");
     $('body').append(table);
     table.append(`<tr>
                             <td>Name</td>
