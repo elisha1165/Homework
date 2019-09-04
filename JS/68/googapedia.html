@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Googapedia</title>
+    <style>
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrap {
+            padding-bottom: 1em;
+            text-align: center;
+        }
+
+        #googapedia {
+            display: inline-block;
+            margin: 0px;
+            margin-inline-start: 10px;
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+        }
+    </style>
+</head>
+
+<body>
+    <H1 id="googapedia">Googapedia</H1>
+    <div id="wrap">
+        <input id="enterPlace" placeholder="Type a Place">
+        <button id="search">Search</button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="googapedia.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAv1Ut_n_C2ghfTN4BGdHRR8iL-_yczOg&callback=initMap"
+        async defer></script>
+
+</body>
+
+</html>
