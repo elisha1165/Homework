@@ -27,9 +27,13 @@ window.initMap = function () {
         }
     });
 
+    const hideQ = function () {
+        ask.css("zIndex", "-1");
+    };
+
     if (localStorage.markers) {
         $("#ask").css("zIndex", "10");
-        $("#no").click(function () {
+        $("#no").click(() => {
             hideQ();
         });
         $("#yes").click(function () {
@@ -39,17 +43,20 @@ window.initMap = function () {
             for (let i = 0; i < setMarkers.length; i++) {
                 loc = { lat: setMarkers[i].pos.lat, lng: setMarkers[i].pos.lng };
                 bounds.extend(loc);
-                /*const marker =*/ new google.maps.Marker({
+                const marker = new google.maps.Marker({
                     position: loc,
                     map: map,
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    map.setZoom(18);
+                    map.setCenter(marker.getPosition());
                 });
             }
             map.fitBounds(bounds);
         });
-
+    } else {
+        hideQ();
     }
-    const hideQ = function () {
-        ask.css("zIndex", "-1");
-    };
+
 
 };
