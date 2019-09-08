@@ -39,7 +39,7 @@ window.initMap = function () {
             for (let i = 0; i < setMarkers.length; i++) {
                 loc = { lat: setMarkers[i].pos.lat, lng: setMarkers[i].pos.lng };
                 bounds.extend(loc);
-                const marker = new google.maps.Marker({
+                /*const marker =*/ new google.maps.Marker({
                     position: loc,
                     map: map,
                 });
