@@ -1,0 +1,29 @@
+html,
+body,
+#wrap {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#wrap{
+    position: relative;
+}
+#ask, #map{
+     height: 98%;
+    width: 98%;
+    position: absolute;
+}
+#ask{
+   background-color: lightgray;
+    opacity: .5;
+    
+}
+#qu{
+    text-align: center;
+    font-size: 28px;
+    color: red
+}
+#yes, #no {
+text-align: center;
+}
