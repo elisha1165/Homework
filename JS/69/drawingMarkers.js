@@ -57,6 +57,4 @@ window.initMap = function () {
     } else {
         hideQ();
     }
-
-
 };
