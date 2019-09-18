@@ -57,7 +57,7 @@ body {
 
 .piece {
     grid-column: 3;
-    margin: 5px;
+    /* margin: 5px; */
     width: 80%;
     height: 100px;
     display:none;
