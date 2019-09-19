@@ -3,6 +3,7 @@
 
     function Vehicle(color/*, speed = 0*/) {
         this.color = color;
+        // this.speed = speed;
     }
 
     Vehicle.prototype.go = function (speed) {
@@ -11,13 +12,13 @@
     };
 
     Vehicle.prototype.print = function () {
-        this.speed ? console.log(`This vehicle is ${this.color} and going ${this.speed} miles an hour`) : console.log(`This vehicle is ${this.color}`);
+        console.log(this.speed ? `This vehicle is ${this.color} and going ${this.speed} miles an hour` : `This vehicle is ${this.color}`);
     };
 
     const greenCar = new Vehicle('green');
 
     greenCar.print();
-    greenCar.go(50);
+    greenCar.go(50);  
     greenCar.print();
 
     function Plane(color) {
