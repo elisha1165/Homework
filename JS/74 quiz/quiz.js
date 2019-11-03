@@ -34,9 +34,13 @@
             return response.json();
         })
         .then(data => {
-            console.log(data);
+            //console.log(data);
             data.forEach(cust => {
-                const itemsOrdered = new Item (cust.item.item, cust.items.total/cust.items.quantity, cust.items.quantity );
+                let itemsOrdered;
+                cust.forEach(it => {
+                   itemsOrdered = new Item (it.items.item, it.items.total/it.items.quantity, it.items.quantity );
+                });
+                
                 const custOrder = new Order(cust.customerName, cust.customerAddress, itemsOrdered);
                 console.log(custOrder);
             });
