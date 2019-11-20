@@ -1,0 +1,38 @@
+.blogName {
+    padding: 50px;
+    border: 1px black solid;
+    width: 250px;
+}
+
+.company {
+    color: green;
+}
+
+.web {
+    color: blue;
+    text-decoration: underline;
+}
+
+#showBlogs {
+    display: none;
+    color: red;
+}
+
+#showBlogs:hover {
+    color: blue;
+}
+
+#viewPosts {
+    display: none;
+}
+
+.arrows {
+    font-size: 46px;
+}
+.arrows:hover{
+    color: blue;
+}
+
+.aPost {
+    border: 1px black solid;
+}
