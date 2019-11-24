@@ -1,6 +1,6 @@
 //'use strict';
 
-import './css/test.css';
+import  './css/test.css';
 
 const allBlogs = document.getElementById('allBlogs');
 const showBlogs = document.getElementById('showBlogs');

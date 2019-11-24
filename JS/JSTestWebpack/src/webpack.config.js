@@ -4,10 +4,15 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 
 module.exports = {
+    entry: './src/index.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: 'main.js',
         path: path.resolve(__dirname, 'dist')
     },
+    watch: true,
+    watchOptions: {
+        ignored: /node_modules/
+      },
     plugins: [
         new CleanWebpackPlugin(),
     ],
@@ -31,7 +36,7 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-            }
+           }
         ]
     }
 };
