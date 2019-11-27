@@ -1,20 +1,20 @@
 const path = require('path');
 const webpack = require('webpack');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    watch: true,
-    watchOptions: {
-        ignored: /node_modules/
-      },
+    devtool: 'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+        })
     ],
 
 
@@ -24,8 +24,8 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     'style-loader',
-                    'css-loader'
-                ]
+                    'css-loader',
+                ],
             },
             {
                 test: /\.m?js$/,
@@ -33,10 +33,11 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env'],
+                        plugins: ['@babel/plugin-proposal-object-rest-spread']
                     }
                 }
-           }
+            }
         ]
     }
 };
