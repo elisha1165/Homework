@@ -124,7 +124,7 @@
         clearPosts();
         let postSpot = 1;
         for (let i = 0; i < 3; i++) {
-            if (postNum >= posts.length - 1) {
+            if (postNum > posts.length - 1) {
                 postNum = 0;
             } else {
 

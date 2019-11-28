@@ -36,3 +36,6 @@
 .aPost {
     border: 1px black solid;
 }
+#next{
+    float: right;
+}

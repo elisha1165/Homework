@@ -125,11 +125,7 @@ const pick3 = function (posts, postNum) {
     clearPosts();
     let postSpot = 1;
     for (let i = 0; i < 3; i++) {
-        if (postNum >= posts.length - 1) {
-            postNum = 0;
-        } else {
-
-
+        if (postNum < posts.length ) {
             const postTitle = document.createElement("p");
             postTitle.innerHTML = `${posts[postNum].title}`;
             const postBody = document.createElement("p");
