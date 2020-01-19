@@ -1,5 +1,3 @@
-//'use strict';
-
 import  './css/test.css';
 
 const allBlogs = document.getElementById('allBlogs');
@@ -26,13 +24,11 @@ const createBlog = function (name, website, companyInfo, id) {
     const web = document.createElement("div");
     web.className = 'web';
     web.innerHTML = `Website: ${website}`;
-
     document.getElementById(`${name}'s blog`).appendChild(web);
 
     const company = document.createElement("div");
     company.className = 'company';
     company.innerHTML = `Company: ${companyInfo.name} <br> ${companyInfo.catchPhrase} <br> ${companyInfo.bs}`;
-
     document.getElementById(`${name}'s blog`).appendChild(company);
 
     blogName.addEventListener('click', () => {
